@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nike - Ofertas</title>
+    <style>
+        /* Reset y estilos base */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f4f4f4;
+            color: #111;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #111;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            user-select: none;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.9);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        header h1 {
+            font-size: 2.8rem;
+            letter-spacing: 4px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+        nav ul li a {
+            padding: 10px 18px;
+            border-radius: 30px;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+        }
+        nav ul li a:hover,
+        nav ul li a.active {
+            background-color: #e82632;
+        }
+
+        /* Contenido */
+        .section-container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 15px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        h2 {
+            color: #111;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #111;
+            padding-bottom: 8px;
+        }
+        .oferta {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .oferta img {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 8px;
+        }
+        .oferta p {
+            margin: 0;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        .precio-antiguo {
+            text-decoration: line-through;
+            color: #888;
+            font-weight: normal;
+            margin-left: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111;
+            color: #ccc;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 70px;
+            user-select: none;
+        }
+        footer p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+        .social-links a {
+            color: #ccc;
+            font-size: 1.6rem;
+            transition: color 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #e82632;
+        }
+        .social-links svg {
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+            fill: currentColor;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nike</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes somos.html">Quienes Somos</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="ofertas.html" class="active">Ofertas</a></li>
+                <li><a href="suscripcion.html">Suscripción</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <div class="section-container">
+        <h2>Ofertas</h2>
+        <div class="oferta">
+            <img src="zoom react.jpeg" alt="Nike Air Max 270 React" />
+            <p>Nike Air Max 270 React</p>
+            <p><span class="precio-antiguo">$150.00</span> $120.00</p>
+        </div>
+        <div class="oferta">
+            <img src="air force 1.jpeg" alt="Nike Air Force 1" />
+            <p>Nike Air Force 1</p>
+            <p><span class="precio-antiguo">$90.00</span> $75.00</p>
+        </div>
+        <div class="oferta">
+            <img src="Nike ZoomX Vaporfly.jpeg" alt="Nike ZoomX Vaporfly" />
+            <p>Nike ZoomX Vaporfly</p>
+            <p><span class="precio-antiguo">$250.00</span> $220.00</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Síguenos en nuestras redes sociales:</p>
+        <div class="social-links" role="list">
+            <a href="https://www.facebook.com/nike" target="_blank" aria-label="Facebook Nike" rel="noopener noreferrer" role="listitem">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22.675 0h-21.35C.593 0 0 .593 0 1.326v21.348C0 23.406.593 24 1.326 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.466.099 2.797.143v3.243h-1.918c-1.504 0-1.795.715-1.795 1.763v2.314h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.324-.593 1.324-1.326V1.326C24 .593 23.406 0 22.675 0z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/nike" target="_blank" aria-label="Instagram Nike" rel="noopener noreferrer" role="listitem">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 2A3.75 3.75 0 004 7.75v8.5A3.75 3.75 0 007.75 20h8.5a3.75 3.75 0 003.75-3.75v-8.5A3.75 3.75 0 0016.25 4h-8.5zm8.375 2.125a1.125 1.125 0 110 2.25 1.125 1.125 0 010-2.25zM12 7a5 5 0 110 10 5 5 0 010-10zm0 2a3 3 0 100 6 3 3 0 000-6z"/></svg>
+            </a>
+            <a href="https://twitter.com/nike" target="_blank" aria-label="Twitter Nike" rel="noopener noreferrer" role="listitem">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.954 4.57a10 10 0 01-2.825.775 4.965 4.965 0 002.163-2.724c-.951.555-2 .959-3.127 1.186a4.923 4.923 0 00-8.384 4.482A13.978 13.978 0 011.671 3.15a4.922 4.922 0 001.523 6.573 4.9 4.9 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084c.627 1.956 2.444 3.377 4.604 3.415a9.867 9.867 0 01-6.102 2.104c-.395 0-.779-.023-1.158-.067a13.945 13.945 0 007.557 2.211c9.054 0 14-7.497 14-13.986 0-.21 0-.42-.015-.63a9.936 9.936 0 002.457-2.548l-.047-.02z"/></svg>
+            </a>
+            <a href="https://www.youtube.com/nike" target="_blank" aria-label="YouTube Nike" rel="noopener noreferrer" role="listitem">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a2.967 2.967 0 00-2.087-2.103C19.813 3.5 12 3.5 12 3.5s-7.813 0-9.411.583A2.968 2.968 0 00.501 6.186 31.44 31.44 0 000 12a31.4 31.4 0 00.501 5.814 2.967 2.967 0 002.088 2.103c1.598.584 9.411.584 9.411.584s7.813 0 9.411-.583a2.967 2.967 0 002.087-2.103A31.417 31.417 0 0024 12a31.411 31.411 0 00-.502-5.814zM9.545 15.568V8.432l6.18 3.568-6.18 3.568z"/></svg>
+            </a>
+        </div>
+        <p>&copy; 2024 Nike, Inc. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nike - Quienes Somos</title>
+    <style>
+        /* Reset y estilos base */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f4f4f4;
+            color: #111;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background-color: #111;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            user-select: none;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.9);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        header h1 {
+            font-size: 2.8rem;
+            letter-spacing: 4px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+        nav ul li a {
+            padding: 10px 18px;
+            border-radius: 30px;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+        }
+        nav ul li a:hover,
+        nav ul li a.active {
+            background-color: #e82632;
+        }
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px 25px;
+            border-radius: 10px;
+            box-shadow: 0 10px 28px rgba(0,0,0,0.12);
+            user-select: none;
+        }
+        main h2 {
+            color: #e82632;
+            font-size: 2.5rem;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #e82632;
+            padding-bottom: 10px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        section h3 {
+            color: #e82632;
+            font-size: 1.8rem;
+            margin-bottom: 12px;
+        }
+        section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #333;
+            text-align: justify;
+        }
+        footer {
+            background-color: #111;
+            color: #ccc;
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+            user-select: none;
+        }
+        footer p {
+            font-size: 1rem;
+        }
+        /* Responsive */
+        @media (max-width: 600px) {
+            main {
+                margin: 20px 10px;
+                padding: 20px 15px;
+            }
+            header h1 {
+                font-size: 2rem;
+                letter-spacing: 2px;
+            }
+            main h2 {
+                font-size: 2rem;
+            }
+            section h3 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nike</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes somos.html" class="active">Quienes Somos</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="ofertas.html">Ofertas</a></li>
+                <li><a href="suscripcion.html">Suscripción</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Quienes Somos</h2>
+        
+        <section>
+            <h3>Historia</h3>
+            <p>
+                Nike fue fundada en 1964 como Blue Ribbon Sports por Bill Bowerman y Phil Knight. En 1971 cambió su nombre a Nike, inspirada en la diosa griega de la victoria. Desde entonces, Nike ha crecido hasta convertirse en una marca global líder que redefine constantemente el diseño, innovación y el rendimiento deportivo.
+            </p>
+        </section>
+
+        <section>
+            <h3>Misión</h3>
+            <p>
+                Nuestra misión es llevar inspiración e innovación a cada atleta en el mundo. Creemos que si tienes un cuerpo, eres un atleta, y por eso desarrollamos productos y experiencias para motivarte a superar tus límites.
+            </p>
+        </section>
+
+        <section>
+            <h3>Visión</h3>
+            <p>
+                Ser la marca de deporte más auténtica, conectada y distintiva del mundo. Queremos ser reconocidos por empoderar a las personas para alcanzar su máximo potencial a través del deporte y la cultura.
+            </p>
+        </section>
+
+        <section>
+            <h3>Objetivos</h3>
+            <p>
+                - Innovar continuamente mediante tecnologías avanzadas para mejorar el rendimiento deportivo.<br />
+                - Promover la sostenibilidad ambiental en todos nuestros procesos.<br />
+                - Fomentar la inclusión, diversidad y el bienestar en todas nuestras actividades.<br />
+                - Crear experiencias excepcionales para nuestros clientes y socios alrededor del mundo.
+            </p>
+        </section>
+
+        <section>
+            <h3>Valores</h3>
+            <p>
+                Nuestros valores fundamentales son la innovación, la sostenibilidad, la inclusión, la integridad y la excelencia. Estos guían cada producto, acción y decisión que tomamos para mantenernos fieles a nuestra misión y compromiso con los atletas y comunidades.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Nike, Inc. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
